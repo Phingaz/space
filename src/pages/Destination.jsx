@@ -2,7 +2,7 @@ import "./Destination.scss";
 import Wrapper from "../components/Wrapper";
 import moon from "../components/asset/moon.png";
 import { NavLink } from "react-router-dom";
-// import styled from "./Mini_Nav.module.css";
+import styled from "./Mini_Nav.module.css";
 
 export const Destination = () => {
   return (
@@ -19,7 +19,7 @@ export const Destination = () => {
                 <img src={moon} />
                 <div>
                   <nav>
-                    {/* <NavLink
+                    <NavLink
                       to="/"
                       className={({ isActive, isPending }) =>
                         isPending
@@ -33,7 +33,7 @@ export const Destination = () => {
                         <span>00</span>
                         HOME
                       </div>
-                    </NavLink> */}
+                    </NavLink>
                   </nav>
                   <h1>Moon</h1>
                   <p>
