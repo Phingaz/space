@@ -121,7 +121,8 @@
     opacity: 1;
     animation: slideDown 0.5s;
     transition: all 0.3s ease-in;
-    width: 50%;
+    width: 55%;
+    padding-left: 20px;
   }
 
   .closed {
@@ -138,7 +139,7 @@
 
     to {
       opacity: 1;
-      width: 50%;
+      width: 55%;
     }
   }
 
@@ -146,7 +147,7 @@
     from {
       display: flex;
       opacity: 1;
-      width: 50%;
+      width: 55%;
     }
 
     to {
