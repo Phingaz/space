@@ -1,10 +1,10 @@
-import "./Destination.scss";
+import "./Crew.scss";
 import Wrapper from "../../components/Wrapper";
-import mars from "../../components/asset/mars.png";
+import europa from "../../components/asset/europa.png";
 import { Planet } from "../../components/Planet";
 import { Mini_nav } from "../../components/Mini_nav";
 
-export const Mars = () => {
+export const Doug = () => {
   return (
     <div className="wrapper">
       <Wrapper>
@@ -15,11 +15,11 @@ export const Mars = () => {
                 <span>01</span> Pick your destination
               </h1>
               <Planet
-                img={mars}
-                title={`mars`}
-                txt="Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!"
-                distance={`225 Mil km`}
-                time={`9 months`}
+                img={europa}
+                title={`EUROPA`}
+                txt="The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin."
+                distance={`628 MIL. km`}
+                time={`3 years`}
               >
                 <Mini_nav />
               </Planet>

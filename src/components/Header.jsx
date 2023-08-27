@@ -55,7 +55,7 @@ export const Header = () => {
           </div>
         </NavLink>
         <NavLink
-          to="/crew"
+          to="/crew/doug"
           className={({ isActive, isPending }) =>
             isPending
               ? styled.pending

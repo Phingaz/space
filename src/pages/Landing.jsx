@@ -19,7 +19,7 @@ export const Landing = () => {
                     a truly out of this world experience!
                   </p>
               </div>
-              <NavLink to="/destination">Explore</NavLink>
+              <NavLink to="/destination/moon">Explore</NavLink>
             </main>
           </div>
         </div>

@@ -6,7 +6,7 @@ export const Mini_nav = () => {
   return (
     <nav className={styled.nav}>
     <NavLink
-      to="/destination/earth"
+      to="/destination/moon"
       className={({ isActive, isPending }) =>
         isPending
           ? styled.pending
@@ -15,7 +15,7 @@ export const Mini_nav = () => {
           : styled.nav_link
       }
     >
-      HOME
+      MOON
     </NavLink>
     <NavLink
       to="/destination/mars"
@@ -28,6 +28,30 @@ export const Mini_nav = () => {
       }
     >
       MARS
+    </NavLink>
+    <NavLink
+      to="/destination/europa"
+      className={({ isActive, isPending }) =>
+        isPending
+          ? styled.pending
+          : isActive
+          ? styled.active
+          : styled.nav_link
+      }
+    >
+      EUROPA
+    </NavLink>
+    <NavLink
+      to="/destination/titan"
+      className={({ isActive, isPending }) =>
+        isPending
+          ? styled.pending
+          : isActive
+          ? styled.active
+          : styled.nav_link
+      }
+    >
+      TITAN
     </NavLink>
   </nav>
   )
