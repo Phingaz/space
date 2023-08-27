@@ -40,7 +40,7 @@ export const Header = () => {
         </NavLink>
 
         <NavLink
-          to="/destination/earth"
+          to="/destination/moon"
           className={({ isActive, isPending }) =>
             isPending
               ? styled.pending
@@ -81,7 +81,7 @@ export const Header = () => {
           }
         >
           <div className={styled.nav_item}>
-            <span>04</span>
+            <span>03</span>
             TECHNOLOGY
           </div>
         </NavLink>

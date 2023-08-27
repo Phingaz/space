@@ -10,19 +10,11 @@ export const Doug = () => {
       <Wrapper>
         <div className="container">
           <div className="container__wrapper">
-            <main className="destination">
+            <main className="crew">
               <h1>
-                <span>01</span> Pick your destination
+                <span>02</span> Meet your crew
               </h1>
-              <Planet
-                img={europa}
-                title={`EUROPA`}
-                txt="The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin."
-                distance={`628 MIL. km`}
-                time={`3 years`}
-              >
-                <Mini_nav />
-              </Planet>
+             
             </main>
           </div>
         </div>

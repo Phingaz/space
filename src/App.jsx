@@ -4,6 +4,7 @@ import { Moon } from "./pages/Destination/Moon";
 import { Mars } from "./pages/Destination/Mars";
 import { Europa } from "./pages/Destination/Europa";
 import { Titan } from "./pages/Destination/Titan";
+import { Doug } from "./pages/Crew/Doug";
 
 function App() {
   const router = createBrowserRouter([
@@ -12,7 +13,7 @@ function App() {
     { path: "/destination/mars", element: <Mars /> },
     { path: "/destination/europa", element: <Europa /> },
     { path: "/destination/titan", element: <Titan /> },
-    { path: "/crew/doug", element: <Titan /> },
+    { path: "/crew/doug", element: <Doug /> },
   ]);
   return (
     <div>
