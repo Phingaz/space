@@ -1,42 +1,138 @@
-.wrapper {
-    min-height: 100svh;
-    position: relative;
-    background-image: url("../components/asset/main.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.destination {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 
-    .container {
-        display: flex;
+    @media (max-width: 800px) {
         justify-content: center;
         align-items: center;
-        height: calc(100svh - 100px);
+    }
 
-        &__wrapper {
-            display: flex;
+    h1 {
+        font-family: var(--font-heading);
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: 0;
+        font-size: 1.5rem;
+
+        @media (max-width: 800px) {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        span {
+            color: grey;
+            margin-right: 20px;
+            font-weight: 100;
+        }
+    }
+
+    .section {
+        align-self: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 8rem;
+        width: 90%;
+        height: 100%;
+
+        @media (max-width: 800px) {
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: min(95%, 1000px);
+            width: 100%;
+            gap: 1rem;
+        }
 
-            .destination {
+        img {
+            width: 40%;
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+            object-position: center;
+
+            @media (max-width: 500px) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            @media (max-width: 800px) {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 7.5rem;
+                font-weight: 100;
+                font-family: var(--font-body);
+
+                @media (max-width: 800px) {
+                    font-size: 6rem;
+                    margin-bottom: 0;
+                }
+
+                @media (max-width: 500px) {
+                    font-size: 3rem;
+                }
+            }
+
+            hr {
+                width: 100%;
+                border: 1px solid rgba(128, 128, 128, 0.304);
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 28px;
+                font-weight: 300;
+                font-family: var(--font-heading);
+                margin-bottom: 20px;
+                color: var(--alt);
+                min-height: 130px;
+
+                @media (max-width: 800px) {
+                    font-size: 0.9rem;
+                    line-height: 25px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .km {
                 display: flex;
-                flex-direction: column;
-                height: 70%;
-                
-                .section {
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    gap: 8rem;
-                    height: 100%;
+                gap: 5rem;
+                min-width: 100%;
 
-                    img {
-                        width: 40%;
-                        aspect-ratio: 1 / 1;
-                        object-fit: contain;
-                        object-position: center;
+                @media (max-width: 800px) {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+
+                &__one,
+                &__two {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+
+                    @media (max-width: 800px) {
+                        gap: 0.5rem;
+                    }
+
+                    h6 {
+                        font-size: 0.9rem;
+                        color: var(--alt);
+                        font-family: var(--font-heading);
+                        font-weight: 300;
+                    }
+
+                    h4 {
+                        font-size: 2rem;
+                        font-family: var(--font-body);
+                        font-weight: 100;
+                        text-transform: uppercase;
                     }
                 }
             }

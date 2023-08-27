@@ -1,17 +1,18 @@
-import { Routes, Route } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Landing } from "./pages/Landing";
-import { Destination } from "./pages/Destination";
+import { Earth } from "./pages/Destination/Earth";
+import { Mars } from "./pages/Destination/Mars";
 
 function App() {
+  const router = createBrowserRouter([
+    { path: "/", element: <Landing /> },
+    { path: "/destination/earth", element: <Earth /> },
+    { path: "/destination/mars", element: <Mars /> },
+  ]);
   return (
-    <>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/destination" element={<Destination />} />
-      </Routes>
-    </>
+    <div>
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
