@@ -63,6 +63,7 @@
 
 @media (max-width: 767px) {
   .nav {
+    display: none;
     flex-direction: column;
     padding: 150px 0 0 0;
     position: absolute;
@@ -128,9 +129,10 @@
     width: 55%;
     padding-left: 20px;
   }
-
+  
   .closed {
     animation: slideUp 0.5s;
+    animation-fill-mode: forwards;
     transition: all 0.3s ease-in-out;
     width: 0;
   }
