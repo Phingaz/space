@@ -1,10 +1,10 @@
 import "./Crew.scss";
 import Wrapper from "../../components/Wrapper";
-import doug from "../../components/asset/doug.png";
+import mark from "../../components/asset/mark.png";
 import { Crews } from "../../components/Crews";
 Crews;
 
-export const Doug = () => {
+export const Mark = () => {
   return (
     <div className="wrapper">
       <Wrapper>
@@ -12,13 +12,10 @@ export const Doug = () => {
           <div className="container__wrapper">
             <main className="crew">
               <Crews
-                img={doug}
-                txt=" Douglas Gerald Hurley is an American engineer, former
-          Marine Corps pilot and former NASA astronaut. He launched
-          into space for the third time as commander of Crew Dragon
-          Demo-2."
-                name=" Douglas Hurley"
-                title="commander"
+                img={mark}
+                txt="Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
+                name="MARK SHUTTLEWORTH"
+                title="Mission Specialist "
               />
             </main>
           </div>

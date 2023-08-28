@@ -1,10 +1,10 @@
 import "./Crew.scss";
 import Wrapper from "../../components/Wrapper";
-import doug from "../../components/asset/doug.png";
+import ans from "../../components/asset/ans.png";
 import { Crews } from "../../components/Crews";
 Crews;
 
-export const Doug = () => {
+export const Ans = () => {
   return (
     <div className="wrapper">
       <Wrapper>
@@ -12,13 +12,10 @@ export const Doug = () => {
           <div className="container__wrapper">
             <main className="crew">
               <Crews
-                img={doug}
-                txt=" Douglas Gerald Hurley is an American engineer, former
-          Marine Corps pilot and former NASA astronaut. He launched
-          into space for the third time as commander of Crew Dragon
-          Demo-2."
-                name=" Douglas Hurley"
-                title="commander"
+                img={ans}
+                txt="Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. "
+                name="Anousheh Ansari"
+                title="Flight Engineer"
               />
             </main>
           </div>
