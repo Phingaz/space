@@ -71,7 +71,7 @@ export const Header = () => {
         </NavLink>
 
         <NavLink
-          to="/tecnology"
+          to="/tech"
           className={({ isActive, isPending }) =>
             isPending
               ? styled.pending

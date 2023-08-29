@@ -1,5 +1,4 @@
 .wrapper {
-    min-height: 100svh;
     position: relative;
     background-image: url("../components/asset/main.png");
     background-position: center;
@@ -86,8 +85,8 @@
                     align-items: center;
                     background-color: white;
                     color: var(--main);
-                    aspect-ratio: 1/1;
                     width: 30%;
+                    aspect-ratio: 1/1;
                     height: fit-content;
                     border-radius: 50%;
                     text-decoration: none;
@@ -102,9 +101,6 @@
                 }
             }
 
-            .destination {}
-
-            .crew {}
         }
     }
 }

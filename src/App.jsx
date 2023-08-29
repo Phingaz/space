@@ -8,6 +8,7 @@ import { Doug } from "./pages/Crew/Doug";
 import { Mark } from "./pages/Crew/Mark";
 import { Vic } from "./pages/Crew/Vic";
 import { Ans } from "./pages/Crew/Ans";
+import { Vehicle } from "./pages/Tech/Vehicle";
 
 function App() {
   const router = createBrowserRouter([
@@ -22,6 +23,7 @@ function App() {
     { path: "/crew/mark", element: <Mark /> },
     { path: "/crew/vic", element: <Vic /> },
     { path: "/crew/ans", element: <Ans /> },
+    { path: "/tech", element: <Vehicle /> },
   ]);
   return (
     <div>
