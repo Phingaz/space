@@ -2,7 +2,7 @@ import "./Destination.scss";
 import Wrapper from "../../components/Wrapper";
 import mars from "../../components/asset/mars.png";
 import { Planet } from "../../components/Planet";
-import { Mini_nav } from "../../components/Mini_nav";
+import { Mini_nav } from "./Mini_nav";
 
 export const Mars = () => {
   return (

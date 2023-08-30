@@ -1,11 +1,11 @@
 import "./Crew.scss";
 import Wrapper from "../../components/Wrapper";
 import doug from "../../components/asset/doug.png";
-import { NavLink } from "react-router-dom";
+
+import { Crews } from "../../components/Crews";
+import { Crew_nav } from "./Crew_nav";
 
 export const Doug = () => {
- 
-
   return (
     <div className="crew_wrapper">
       <Wrapper>
@@ -17,21 +17,16 @@ export const Doug = () => {
                   <span>02</span>Meet your crew
                 </h1>
               </div>
-              <div className="section">
-                <div className="info">
-                  <h2>Commander</h2>
-                  <h1>Douglas Hurley</h1>
-                  <p>
-                    Douglas Gerald Hurley is an American engineer, former Marine
-                    Corps pilot and former NASA astronaut. He launched into
-                    space for the third time as commander of Crew Dragon Demo-2.
-                  </p>
-                </div>
-
-                <div className="img">
-                  <img src={doug} />
-                </div>
-              </div>
+              <Crews
+                title="Commander"
+                name="Douglas Hurley"
+                text="Douglas Gerald Hurley is an American engineer, former Marine
+                Corps pilot and former NASA astronaut. He launched into
+                space for the third time as commander of Crew Dragon Demo-2."
+                img={doug}
+              >
+                <Crew_nav />
+              </Crews>
             </main>
           </div>
         </div>

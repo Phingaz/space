@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .nav {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.nav_link {
+  color: var(--alt);
+}
+
+.nav_link,
+.active {
+  width: 12px;
+  aspect-ratio: 1 / 1;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: var(--font-heading);
+  border-radius: 50%;
+  background-color: var(--grey);
+}
+
+.active {
+  color: var(--white);
+  background-color: var(--white);
+}
+
+.nav_link:hover,
+.active:hover {
+    background-color: rgb(195, 191, 191);
+}

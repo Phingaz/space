@@ -2,7 +2,7 @@ import "./Destination.scss";
 import Wrapper from "../../components/Wrapper";
 import moon from "../../components/asset/moon.png";
 import { Planet } from "../../components/Planet";
-import { Mini_nav } from "../../components/Mini_nav";
+import { Mini_nav } from "./Mini_nav";
 
 export const Moon = () => {
   return (
