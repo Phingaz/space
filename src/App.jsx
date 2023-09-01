@@ -17,6 +17,8 @@ import { Ans } from "./pages/Crew/Ans";
 
 import { Vehicle } from "./pages/Tech/Vehicle";
 import { Tech } from "./pages/Tech/Tech";
+import { Port } from "./pages/Tech/Port";
+import { Capsule } from "./pages/Tech/Capsule";
 
 function App() {
   const router = createBrowserRouter([
@@ -45,7 +47,11 @@ function App() {
     {
       path: "/tech",
       element: <Tech />,
-      children: [{ path: "vehicle", element: <Vehicle /> }],
+      children: [
+        { path: "vehicle", element: <Vehicle /> },
+        { path: "port", element: <Port /> },
+        { path: "capsule", element: <Capsule /> },
+      ],
     },
   ]);
   useEffect(() => {}, []);
