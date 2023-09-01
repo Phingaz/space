@@ -11,9 +11,10 @@ import { Titan } from "./pages/Destination/Titan";
 
 import { Crew } from "./pages/Crew/Crew";
 import { Doug } from "./pages/Crew/Doug";
-// import { Mark } from "./pages/Crew/Mark";
-// import { Vic } from "./pages/Crew/Vic";
-// import { Ans } from "./pages/Crew/Ans";
+import { Mark } from "./pages/Crew/Mark";
+import { Vic } from "./pages/Crew/Vic";
+import { Ans } from "./pages/Crew/Ans";
+
 import { Vehicle } from "./pages/Tech/Vehicle";
 import { Tech } from "./pages/Tech/Tech";
 
@@ -34,7 +35,12 @@ function App() {
     {
       path: "/crew",
       element: <Crew />,
-      children: [{ path: "doug", element: <Doug /> }],
+      children: [
+        { path: "doug", element: <Doug /> },
+        { path: "mark", element: <Mark /> },
+        { path: "vic", element: <Vic /> },
+        { path: "ans", element: <Ans /> }
+      ],
     },
     {
       path: "/tech",
