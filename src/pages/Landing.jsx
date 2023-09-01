@@ -1,27 +1,20 @@
-import "./Landing.scss";
 import Wrapper from "../components/Wrapper";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
+import moon from "../components/asset/moon.png";
 
 export const Landing = () => {
+  const nav = [
+    { id: 0, name: "moon", link: "moon" },
+    { id: 1, name: "mars", link: "mars" },
+    { id: 2, name: "europa", link: "europa" },
+    { id: 3, name: "titan", link: "titan" },
+  ];
+
   return (
-    <div className="wrapper">
+    <div className="h-[100svh] w-screen bg-dark text-light bg-landing bg-cover bg-center bg-no-repeat">
       <Wrapper>
-        <div className="container">
-          <div className="container__wrapper">
-            <main className="main">
-              <div className="text">
-                  <h2>SO, YOU WANT TO TRAVEL TO</h2>
-                  <h1>SPACE</h1>
-                  <p>
-                    Let’s face it; if you want to go to space, you might as well
-                    genuinely go to outer space and not hover kind of on the
-                    edge of it. Well sit back, and relax because we’ll give you
-                    a truly out of this world experience!
-                  </p>
-              </div>
-              <NavLink to="/destination/moon">Explore</NavLink>
-            </main>
-          </div>
+        <div className="flex justify-center items-center w-full h-[calc(100svh-80px)]">
+          <div className="grid flex-col h-full"></div>
         </div>
       </Wrapper>
     </div>

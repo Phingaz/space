@@ -1,23 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500&family=Barlow:wght@100;200;300;400;500&family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400&family=Barlow:wght@100;200;300;400;500&family=Bellefair&display=swap');
 
-:root {
-  --font-body: 'Bellefair', serif;
-  --font-heading: "Barlow", sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  --main: #0b0d17;
-  --alt: #d0d6f9;
-  --white: #fff;
-  --grey: grey;
+@layer components {
+  .transition-f {
+    transition: all 0.3s ease;
+  }
 }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  color: var(--white);
-}
-
-html {
-  overflow-x: hidden;
-}
-

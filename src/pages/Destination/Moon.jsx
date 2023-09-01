@@ -1,37 +1,24 @@
-import "./Destination.scss";
-import Wrapper from "../../components/Wrapper";
-import moon from "../../components/asset/moon.png";
-import { Planet } from "../../components/Planet";
-import { Mini_nav } from "./Mini_nav";
-
 export const Moon = () => {
   return (
-    <div className="wrapper_destination">
-      <Wrapper>
-        <div className="container">
-          <div className="container__wrapper">
-            <main className="destination">
-              <div className="heading">
-                <h1>
-                  <span>01</span> Pick your destination
-                </h1>
-              </div>
-              <Planet
-                img={moon}
-                title="moon"
-                txt=" See our planet as you’ve never seen it before. A perfect
-              relaxing trip away to help regain perspective and come back
-              refreshed. While you’re there, take in some history by
-              visiting the Luna 2 and Apollo 11 landing sites."
-                distance='384,400 km'
-                time='3 days'
-              >
-                <Mini_nav />
-              </Planet>
-            </main>
-          </div>
+    <div className="flex flex-col md:gap-5 gap-2">
+      <h1 className="md:text-9xl text-5xl text-center md:text-left font-bellefair uppercase">Moon</h1>
+      <p className="text-alt font-barlow text-center md:text-left tracking-tight font-normal">
+        See our planet as you’ve never seen it before. A perfect relaxing trip
+        away to help regain perspective and come back refreshed. While you’re
+        there, take in some history by visiting the Luna 2 and Apollo 11 landing
+        sites.
+      </p>
+      <hr className="border-gray-500"/>
+      <div className="flex justify-between items-center">
+        <div>
+          <h6 className="text-alt text-sm">AVG. DISTANCE</h6>
+          <h4 className="text-4xl font-bellefair uppercase">384,400 km</h4>
         </div>
-      </Wrapper>
+        <div>
+          <h6 className="text-alt text-sm">Est. travel time</h6>
+          <h4 className="text-4xl font-bellefair uppercase">3 days</h4>
+        </div>
+      </div>
     </div>
   );
 };
