@@ -57,7 +57,7 @@ export const Header = () => {
       </button>
 
       <ul
-        className={`flex flex-col h-full md:flex-row md:justify-center md:items-center gap-5 md:bg-transparent font-barlow_cond ${
+        className={`flex flex-col h-full md:flex-row md:justify-center md:items-center gap-10 md:bg-transparent font-barlow_cond ${
           styled.nav
         } ${sh ? styled.open : styled.closed}`}
       >

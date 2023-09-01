@@ -38,16 +38,17 @@ export const Crew = () => {
   return (
     <div className="h-[100svh] w-screen bg-dark text-light bg-crew bg-cover bg-center bg-no-repeat">
       <Wrapper>
-        <div className="flex flex-col md:justify-between gap-10 md:gap-0 md:h-[80%] h-full">
+        <div className="flex flex-col md:justify-between gap-10 md:gap-0 md:h-[calc(100svh-80px)] h-full">
           <h2 className="font-barlow_cond tracking-tight text-4xl font-thin text-center md:text-left uppercase">
             <span className="pr-4 font-normal text-gray-500">02</span> Meet Your
             crew
           </h2>
 
           <div className="flex flex-col md:flex-row md:justify-between justify-center md:items-center items-center md:gap-10 h-full">
-            <div className="flex flex-col justify-between items-center md:items-start w-full md:w-6/12 h-[60%]">
+
+            <div className="flex flex-col justify-between items-center md:items-start w-full md:w-6/12 md:h-[50%] md:mb-0 mb-10">
               <Outlet />
-              <nav className="flex gap-5 mb-5 md:mb-10">
+              <nav className="flex gap-5 md:mb-10">
                 {nav.map((el) => (
                   <NavLink
                     key={el.id}
@@ -64,9 +65,10 @@ export const Crew = () => {
               </nav>
             </div>
 
-            <div className="h-full w-[50%]">
-              <img src={img} width={"100%"} />
-            </div>
+            <img
+              src={img}
+              className="border-b md:border-b-0 mb-5 md:mb-0 w-6/12 order-first md:order-none md:self-end object-cover"
+            />
           </div>
         </div>
       </Wrapper>

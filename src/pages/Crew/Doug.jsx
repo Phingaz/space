@@ -1,6 +1,6 @@
 export const Doug = () => {
   return (
-    <div className="flex flex-col md:gap-5 gap-2">
+    <div className="mb-5 md:mb-0 md:order-none flex flex-col md:gap-5 gap-2 text-center md:text-left">
       <h2 className="md:text-4xl text-2xl text-gray-500 font-bellefair uppercase">
         Commander
       </h2>

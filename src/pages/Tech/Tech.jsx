@@ -7,10 +7,9 @@ import titan from "../../components/asset/titan.png";
 
 export const Tech = () => {
   const nav = [
-    { id: 0, name: "moon", link: "moon" },
-    { id: 1, name: "mars", link: "mars" },
-    { id: 2, name: "europa", link: "europa" },
-    { id: 3, name: "titan", link: "titan" },
+    { id: 0, name: "one", link: "one" },
+    { id: 1, name: "two", link: "two" },
+    { id: 2, name: "three", link: "three" },
   ];
 
   let location = useLocation().pathname.split("/")[2];
@@ -36,12 +35,12 @@ export const Tech = () => {
   }
 
   return (
-    <div className="h-[100svh] w-screen bg-dark text-light bg-destination bg-cover bg-center bg-no-repeat">
+    <div className="h-[100svh] w-screen bg-dark text-light bg-tech bg-cover bg-center bg-no-repeat">
       <Wrapper>
         <div className="flex flex-col md:justify-between gap-10 md:gap-0 md:h-[80%] h-full">
           <h2 className="font-barlow_cond tracking-tight text-4xl font-thin text-center md:text-left">
-            <span className="pr-4 font-normal text-gray-500">01</span> PICK YOUR
-            DESTINATION
+            <span className="pr-4 font-normal text-gray-500">01</span>SPACE
+            LAUNCH 101
           </h2>
 
           <div className="flex flex-col md:flex-row md:justify-between justify-center md:items-center items-center md:gap-10">
