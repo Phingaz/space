@@ -5,7 +5,7 @@ import mars from "../../components/asset/mars.png";
 import europa from "../../components/asset/europa.png";
 import titan from "../../components/asset/titan.png";
 
-export const Destination = () => {
+export const Tech = () => {
   const nav = [
     { id: 0, name: "moon", link: "moon" },
     { id: 1, name: "mars", link: "mars" },

@@ -6,6 +6,7 @@ export default {
       backgroundImage: {
         landing: "url(./components/asset/main.png)",
         destination: "url(./components/asset/destination.jpg)",
+        crew: "url(./components/asset/crew.png)",
       },
       fontFamily: {
         bellefair: ["Bellefair", "serif"],

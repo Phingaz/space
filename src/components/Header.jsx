@@ -10,7 +10,7 @@ export const Header = () => {
     { title: "Home", number: 0, link: "/" },
     { title: "Destination", number: 1, link: "/destination" },
     { title: "Crew", number: 2, link: "/crew" },
-    { title: "Vehicle", number: 3, link: "/vehicle" },
+    { title: "Technology", number: 3, link: "/tech" },
   ];
 
   const shoNa = () => {
@@ -26,6 +26,18 @@ export const Header = () => {
       location.pathname.split("/").includes("destination")
     ) {
       navigate("/destination/moon");
+    }
+    if (
+      location.pathname.split("/").length <= 2 &&
+      location.pathname.split("/").includes("crew")
+    ) {
+      navigate("/crew/doug");
+    }
+    if (
+      location.pathname.split("/").length <= 2 &&
+      location.pathname.split("/").includes("tech")
+    ) {
+      navigate("/tech/vehicle");
     }
   }, [location, navigate]);
 
@@ -58,7 +70,7 @@ export const Header = () => {
                   ? ""
                   : isActive
                   ? "font-semibold border-b-4 pb-2 tracking-wider"
-                  : "font-semibold pb-2 tracking-wider"
+                  : "font-semibold pb-2 tracking-wider hover:border-b-4 transition-f"
               }
             >
               0{el.number}
