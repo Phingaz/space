@@ -43,7 +43,7 @@ export const Header = () => {
 
   return (
     <header className={styled.header}>
-      <a href="#home">
+      <a href="/">
         <img src={logo} width={"40px"} />
       </a>
 
